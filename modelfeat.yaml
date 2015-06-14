@@ -1,0 +1,83 @@
+# 1. data file path
+input_file: /Users/sun/workspace/data/sj_sku_run_model_1229.log
+output_file: /Users/sun/workspace/data/sj_sku_run_model_1229_libsvm.csv
+feaure_save_file: /Users/sun/workspace/data/sj_sku_run_model_1229_featmap.fm
+statisic_file: /Users/sun/workspace/data/sj_sku_run_model_1229_featstat.st
+
+# 2. opts
+isSvmRank: False
+skip_headers: True
+bin_num: 5
+
+
+# 3. select and statisic feature
+feature:
+    target: 
+        name: 'sales_num'
+        id: 0
+        type: 'c'
+    field:
+      - name: 'sku_avg_site_purchase_num'
+        id: 1
+        type: 'n'
+        bin: 'auto'
+      - name: 'sign_price'
+        id: 2
+        type: 'n'
+        bin: 'auto'    
+      - name: 'sales_agio'
+        id: 3
+        type: 'n'
+        bin: 'auto'
+      - name: 'sales_price'
+        id: 4
+        type: 'n'
+        bin: 'auto'
+      - name: 'pt_brand_id'
+        id: 5
+        type: 'c'
+      - name: 'size'
+        id: 6
+        type: 'c'
+      - name: 'color'
+        id: 7
+        type: 'c'
+      - name: 'style'
+        id: 8
+        type: 'c'
+      - name: 'item'
+        id: 9
+        type: 'c'
+      - name: 'group_age'
+        id: 10
+        type: 'c'
+      - name: 'gender'
+        id: 11
+        type: 'c'
+      - name: 'attribute'
+        id: 12
+        type: 'c'
+      - name: 'attribute_material'
+        id: 13
+        type: 'c'
+      - name: 'mth'
+        id: 14
+        type: 'c'
+      - name: 'sales_site_code'
+        id: 15
+        type: 'c'
+      - name: 'ct3_id'
+        id: 16
+        type: 'c'
+      - name: 'brand_level'
+        id: 17
+        type: 'c'
+      - name: 'gds_lt_sales_num'
+        id: 18
+        type: 'n'
+        bin: 'auto'
+      - name: 'sku_l3m_avg_sales_num'
+        id: 19
+        bin: 'auto'
+        type: 'n'
+        bin: 'auto'
